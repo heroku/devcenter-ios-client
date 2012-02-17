@@ -18,7 +18,7 @@
     
     SushiTableViewController *viewController = [[[SushiTableViewController alloc] initWithStyle:UITableViewStylePlain] autorelease];
     self.navigationController = [[[UINavigationController alloc] initWithRootViewController:viewController] autorelease];
-    [self.window addSubview:self.navigationController.view];
+    self.window.rootViewController = self.navigationController;
     
     [self.window makeKeyAndVisible];
     
